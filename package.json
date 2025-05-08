@@ -1,0 +1,29 @@
+{
+  "name": "mapm",
+  "version": "1.0.0",
+  "description": "A package manager for import maps",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mapm": "./dist/mapm.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "acorn": "^8.14.1",
+    "acorn-walk": "^8.3.4",
+    "chalk": "^5.4.1",
+    "cheerio": "^1.0.0",
+    "commander": "^13.1.0",
+    "glob": "^11.0.2",
+    "js-beautify": "^1.15.4",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.2.0",
+    "semver": "^7.7.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4"
+  }
+}

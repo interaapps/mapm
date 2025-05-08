@@ -1,0 +1,14 @@
+import { build } from 'esbuild';
+
+await build({
+    entryPoints: ['./src/index.js'],   // Your CLI entry file
+    bundle: true,
+    platform: 'node',
+    outfile: 'dist/mapm.js',
+    banner: {
+        // js: '#!/usr/bin/env node',
+    },
+
+    format: 'esm',
+    target: ['node18'],
+});
