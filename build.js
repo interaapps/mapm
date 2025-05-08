@@ -4,11 +4,11 @@ await build({
     entryPoints: ['./src/index.js'],   // Your CLI entry file
     bundle: true,
     platform: 'node',
-    outfile: 'dist/mapm.js',
+    outfile: 'dist/mapm.cjs',
     banner: {
         // js: '#!/usr/bin/env node',
     },
 
-    format: 'esm',
+    format: 'cjs',
     target: ['node18'],
 });
