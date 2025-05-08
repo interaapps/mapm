@@ -74,8 +74,8 @@ export class ImportMap {
         }
 
         this.map.imports[name] = url;
-        this.map.imports[`${name}@${version}`] = url;
-        //this.map.imports[`${name}/`] = `${url}/`;
+        this.map.imports[`${name}/`] = `${url}/`;
+        //this.map.imports[`${name}@${version}`] = url;
         //this.map.imports[`${name}@${version}/`] = `${url}/`;
 
         spinner?.succeed(`Added ${chalk.green(name)} -> ${chalk.underline(url)} to import map.`);
